@@ -1,24 +1,25 @@
 import React, { Component } from 'react';
 import './App.css';
 import Home from './Home';
-import showCard from './showCard'
-import { BrowserRouter, Route, }    from 'react-router-dom';
+import Card from './showCard';
+import { BrowserRouter as Router, Route }    from 'react-router-dom';
 
 class App extends Component {
   render() {
     return (
-     
-        <BrowserRouter>
+        <div>
+        <Router>
           <div>
-            <Route exact path='./' component={Home}/>
-            <Route exact path='./accueil' component={Home}/>
-            <Route exact path='./vitrine' component={showCard}/>
-            <Home />
+
+            <Route exact path='/' component={Home}/>
+            <Route exact path='/Home' component={Home}/>
+            <Route  path='/Card' component={Card}/>
+           
           </div>
-          </BrowserRouter>
-      
-    );
-  }
+        </Router>
+        </div>
+    
+    );}
 }
 
 export default App;
