@@ -44,7 +44,7 @@ body{
   font-weight: bold;
   color: #fff;
   text-transform: uppercase;
-  margin: 250px auto;
+  margin: 0 auto;
   width: 200px;
   text-decoration: none;
   line-height: 50px; 
@@ -58,11 +58,11 @@ body{
   color: #282C34;
   transition: all .15s ease-in-out;
 }
-.card_container{
+.card_contaiener{
   max-width: 1980px;
   margin: 0 auto;
 }
-.search{
+.movie-container{
   display: flex;
   flex-wrap: wrap;
   border-radius: 4px;
@@ -94,3 +94,27 @@ h3{
   height: 50px;
   text-align: center;
 }
+header{
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+  background-color: #fff;
+  align-items: center;
+  
+}
+
+input{
+  width: 250px;
+  height: 30px;
+  border-radius: 20px;
+  border: 1px solid #61dafb;
+  color: #282C34;
+  font-size: 18px;
+  padding: 4px;
+}
+
+.actors{
+  font-weight: bold;
+  color: #61dafb;
+}
+
