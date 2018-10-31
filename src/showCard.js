@@ -5,7 +5,7 @@ import movie                from './movie.json';
 class Card extends Component {
   render() {
     return (
-      <div className="card_contaiener">
+      <div className="card_container">
         { 
             movie.movie.map(function(movies){
                 return (        
